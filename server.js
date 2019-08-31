@@ -4,7 +4,7 @@ var prerender = require('./lib');
 var server
 if (process.platform !== 'win32') {
     server = prerender({
-        chromeLocation: '/home/ubuntu/beta-webapp/node_modules/puppeteer/.local-chromium/linux-656675/chrome-linux/chrome'
+        chromeLocation: '/usr/bin/google-chrome-stable'
     });
 } else {
     server = prerender();
